@@ -1,0 +1,9 @@
+# Repair Vagrant UID/GID to match our current user
+#
+Vagrant.configure(2) do |config|
+
+
+config.vm.synced_folder "src", "/var/www/",
+  owner: "vagrant", group: "vagrant"
+
+end
