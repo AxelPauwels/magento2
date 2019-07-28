@@ -16,7 +16,8 @@
             <!--<block name="script-example3-requirejs" template="VendorAxel_ModuleJs::script-example3-container.phtml"/>-->
             <!--<block name="script-example4-requirejs" template="VendorAxel_ModuleJs::script-example4-container.phtml"/>-->
             <!--<block name="script-example5-requirejs" template="VendorAxel_ModuleJs::script-example5-container.phtml"/>-->
-            <block name="script-example6-requirejs" template="VendorAxel_ModuleJs::script-example6-container.phtml"/>
+            <!--<block name="script-example6-requirejs" template="VendorAxel_ModuleJs::script-example6-container.phtml"/>-->
+            <block name="script-example7-requirejs" template="VendorAxel_ModuleJs::script-example7-container.phtml"/>
         </referenceContainer>
     </body>
 </page>
