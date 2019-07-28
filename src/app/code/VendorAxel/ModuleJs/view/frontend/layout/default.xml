@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!--normally while the html is loading, the script will be executed and locks the html loading process,
+        the html will continue loading, after the script is executed.
+        By adding the defer="true" attribute, the script will be executed after the html is done loading,
+        so the user doesn't have to wait-->
+        <script src="VendorAxel_ModuleJs::js/script-example1.js" defer="true" />
+    </head>
+</page>

@@ -1,0 +1,225 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 HelveticaNeue;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;\red27\green31\blue34;\red255\green255\blue255;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c93333;\cssrgb\c14118\c16078\c18039;\cssrgb\c100000\c100000\c100000;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16620\viewh11980\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 \ul \ulc0 Create a new project\
+
+\b0 \ulnone Download the \'93vagrant-standard\'94 zip from {\field{\*\fldinst{HYPERLINK "https://confluence.xploregroup.net/display/PPVB/Vagrantfile+-+standaard"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://confluence.xploregroup.net/display/PPVB/Vagrantfile+-+standaard}}
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 \
+\
+\
+\
+
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \ulc0 Adjust the vagrant file (like phopro/phpro-hypernode)\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://confluence.xploregroup.net/display/PPVB/PPV-boxes"}}{\fldrslt 
+\f1\b0 \cf2 \expnd0\expndtw0\kerning0
+\ulc2 https://confluence.xploregroup.net/display/PPVB/PPV-boxes}}
+\f1\b0 \cf2 \expnd0\expndtw0\kerning0
+\ulc2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \ulnone Use these lines:\
+        r.vm.box = "phpro/phpro-hypernode"\
+        r.vm.hostname = "sigfrontend.local"\
+        r.vm.box_url = "https://s3-eu-west-1.amazonaws.com/phpro-vagrant-boxes/vagrant/json/phpro/phpro-hypernode.json"\
+    	r.vm.box_version = "0.3.0"\
+Change hostname and IP address\
+\
+\
+\
+
+\b \ul Hosts file\
+
+\b0 \ulnone Add a new record in /etc/hosts\
+\
+\
+\
+
+\b \ul Start box and connect\
+
+\b0 \ulnone Command: vagrant up\
+Command: vagrant ssh\
+\
+\
+\
+
+\b \ul Install magento - part 1 (host machine)\
+
+\b0 \ulnone cd src/\
+Command: composer create-project --repository=https://repo.magento.com/ magento/project-community-edition .\
+The username and pasword you need can be found in your account:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://magento.com/"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://magento.com/}}
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \ulnone > login > My Account > MarketPlace > My Profile > My Products/Access Keys >\
+-> public key = username\
+-> private key = password\
+\
+\
+\
+
+\b \ul Create database (vagrant)\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\b0 \cf0 \ulnone mysql -u root -proot -e "CREATE DATABASE IF NOT EXISTS magento;"\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Or better:\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf0 mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS magento;"	and fill in password:root\
+Test:\
+mysql -u root -p	to test database\
+> use magento\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+
+\b \ul Install magento - part 2
+\b0 \ulnone \
+test-command: bin/magento (to see the list of commands)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf0 cd /var/www\
+chmod +x bin/magento\
+\
+\
+Install-command: (base-url should be like in etc/hosts)\
+bin/magento setup:install --base-url=http://
+\b sigfrontend.loca
+\b0 l/ \\\
+--db-host=localhost --db-name=magento --db-user=
+\b root
+\b0  --db-password=
+\b root
+\b0  \\\
+--admin-firstname=Admin --admin-lastname=User --admin-email=admin@phpro.be \\\
+--admin-user=admin --admin-password=admin123 --language=en_US \\\
+--currency=EUR --timezone=Europe/Brussels --use-rewrites=1 \\\
+--backend-frontname=admin\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Install sample data (optional) (need access keys from magento/marketplace again)\
+bin/magento sampledata:deploy \
+(if error \'93file could not be downloaded\'94 first do \'93
+\f2\fs28 \cf3 \cb4 \expnd0\expndtw0\kerning0
+composer clear-cache
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \'94, then the command again)\
+bin/magento setup:upgrade\
+\
+\
+Possible Error: (found by errorcode in browser in /var/ww/var/report)\
+\'93Session data file is not created by your uid in \'85\'94\
+Copy the <project>/src/nfs-mount content from maniet \
+vagrant reload\
+vagrant ssh\
+cd /var/www\
+sudo service nginx restart\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b \cf0 \ul Install nginx\
+
+\b0 \ulnone copy <project>/cfg/nginx.include.conf\
+\
+\
+
+\b \ul Install grunt\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b0 \cf0 \ulnone Rename Package.json.sample to Package.json\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+sudo apt-get update\
+ curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -\
+sudo apt-get install -y nodejs\
+sudo npm i\
+sudo npm i grunt -g\
+\
+Rename Gruntfile.js.sample to Gruntfile.js\
+Rename grunt-config.json.sample to grunt-config.json\
+Add a new file src/dev/tools/grunt/configs/local-themes.js\
+Add content:\
+'use strict';\
+\
+module.exports = \{\
+    axel_us: \{\
+        area: 'frontend',\
+        name: 'VendorAxel/ThemeAxel',\
+        locale: \'91en_US',\
+        files: [\
+            'css/styles-m',\
+            'css/styles-l'\
+        ],\
+        dsl: 'less'\
+    \},\
+    blank: \{\
+        area: 'frontend',\
+        name: 'Magento/blank',\
+        locale: 'en_US',\
+        files: [\
+            'css/styles-m',\
+            'css/styles-l',\
+            'css/email',\
+            'css/email-inline'\
+        ],\
+        dsl: 'less'\
+    \},\
+    luma: \{\
+        area: 'frontend',\
+        name: 'Magento/luma',\
+        locale: 'en_US',\
+        files: [\
+            'css/styles-m',\
+            'css/styles-l'\
+        ],\
+        dsl: 'less'\
+    \},\
+    backend: \{\
+        area: 'adminhtml',\
+        name: 'Magento/backend',\
+        locale: 'en_US',\
+        files: [\
+            'css/styles-old',\
+            'css/styles'\
+        ],\
+        dsl: 'less'\
+    \}\
+\};\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b0 \cf0 \
+}
