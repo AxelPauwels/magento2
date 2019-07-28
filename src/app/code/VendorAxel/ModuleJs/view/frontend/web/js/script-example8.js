@@ -1,4 +1,4 @@
-//https://www.mage2.tv/content/javascript/requirejs-fundamentals/using-requirejs-javascript-dependencies/
+// https://www.mage2.tv/content/javascript/requirejs-fundamentals/aliasing-requirejs-module-files-with-requirejs-config/
 // ---
 // THIS FILE: Use dependency injection
 
@@ -7,7 +7,7 @@
 
 define(['jquery'], function ($) {
     return function (config, element) {
-        console.log('script-example7, data-mage-init with dependency injection');
+        console.log('script-example8, data-mag-init with dependency injection');
 
         $.getJSON(config.base_url + 'rest/V1/directory/currency', function(result){
          element.innerText = JSON.stringify(result, null, 2);
