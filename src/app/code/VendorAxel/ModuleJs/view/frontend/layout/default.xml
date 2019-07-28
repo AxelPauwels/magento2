@@ -18,7 +18,8 @@
             <!--<block name="script-example5-requirejs" template="VendorAxel_ModuleJs::script-example5-container.phtml"/>-->
             <!--<block name="script-example6-requirejs" template="VendorAxel_ModuleJs::script-example6-container.phtml"/>-->
             <!--<block name="script-example7-requirejs" template="VendorAxel_ModuleJs::script-example7-container.phtml"/>-->
-            <block name="script-example8" template="VendorAxel_ModuleJs::script-example8-container.phtml"/>
+            <!--<block name="script-example8" template="VendorAxel_ModuleJs::script-example8-container.phtml"/>-->
+            <!--example 9 is a mixin, defined in requirejs-config"-->
         </referenceContainer>
     </body>
 </page>
