@@ -1,5 +1,9 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types=1);
+
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ */
+
 ?>
 <!--EXAMPLE 2-->
 <!------------->
@@ -17,10 +21,23 @@ declare(strict_types=1);
 
 <!--EXAMPLE 3-->
 <!------------->
+<!--<script type="text/x-magento-init">-->
+<!--    {-->
+<!--        "*": {-->
+<!--            "VendorAxel_ModuleJs/js/script-example3-requirejs": {}-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--EXAMPLE 4-->
+<!------------->
 <script type="text/x-magento-init">
     {
         "*": {
-            "VendorAxel_ModuleJs/js/script-example3-requirejs": {}
+            "VendorAxel_ModuleJs/js/script-example4-requirejs": {
+            "base_url": "<?= $block->escapeJs($block->getBaseUrl()) ?>"
+            }
         }
     }
 </script>
+<!--pass some php variables into the object of the javascript-key "VendorAxel_ModuleJs/js/script-example3-requirejs"-->
