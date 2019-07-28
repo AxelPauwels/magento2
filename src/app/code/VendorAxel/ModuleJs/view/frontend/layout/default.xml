@@ -6,7 +6,7 @@
         the html will continue loading, after the script is executed.
         By adding the defer="true" attribute, the script will be executed after the html is done loading,
         so the user doesn't have to wait-->
-        <script src="VendorAxel_ModuleJs::js/script-example1.js" defer="true"/>
+        <!--<script src="VendorAxel_ModuleJs::js/script-example1.js" defer="true"/>-->
     </head>
     <body>
         <referenceContainer name="content">
