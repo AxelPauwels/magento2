@@ -8,7 +8,6 @@ define(function () {
     // if the selector is an asterisk, this function will be called once and element will be "false"
     return function (config, element) {
         console.log('script-example5, I am targetting a specific dom node');
-        console.log(config);
         console.log(element);
     }
 });

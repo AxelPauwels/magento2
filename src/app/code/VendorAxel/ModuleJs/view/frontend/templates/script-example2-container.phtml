@@ -1,63 +1,16 @@
 <?php declare(strict_types=1);
 
-/**
- * @var \Magento\Framework\View\Element\Template $block
- */
+/** @var \Magento\Framework\View\Element\Template $block */
 
 ?>
-<!--EXAMPLE 2-->
-<!------------->
 <!--the content of "text/x-magento-init" is JSON-->
-<!--<script type="text/x-magento-init">-->
-<!--    {-->
-<!--        "*": {-->
-<!--            "VendorAxel_ModuleJs/js/script-example2-requirejs": {}-->
-<!--        }-->
-<!--    }-->
-<!--</script>-->
-<!--the file that will be loaded is "VendorAxel_ModuleJs/js/script-example2" (note: omit the .js extension),
- with no configuration (see empty {} after the filename)-->
-<!--the asterisk is instead of a selector, in this case the asterisk means "no selector"-->
-
-
-
-<!--EXAMPLE 3-->
-<!------------->
-<!--<script type="text/x-magento-init">-->
-<!--    {-->
-<!--        "*": {-->
-<!--            "VendorAxel_ModuleJs/js/script-example3-requirejs": {}-->
-<!--        }-->
-<!--    }-->
-<!--</script>-->
-
-
-
-<!--EXAMPLE 4-->
-<!------------->
-<!--<script type="text/x-magento-init">-->
-<!--    {-->
-<!--        "*": {-->
-<!--            "VendorAxel_ModuleJs/js/script-example4-requirejs": {-->
-<!--            "base_url": "--><?//= $block->escapeJs($block->getBaseUrl()) ?><!--"-->
-<!--            }-->
-<!--        }-->
-<!--    }-->
-<!--</script>-->
-<!--pass some php variables into the object of the javascript-key "VendorAxel_ModuleJs/js/script-example3-requirejs"-->
-
-
-<!--EXAMPLE 5-->
-<!------------->
 <script type="text/x-magento-init">
     {
-        "div#target": {
-            "VendorAxel_ModuleJs/js/script-example5-requirejs": {
-                "base_url": "<?= $block->escapeJs($block->getBaseUrl()) ?>"
-            }
+        "*": {
+            "VendorAxel_ModuleJs/js/script-example2-requirejs": {}
         }
     }
 </script>
-<div id="target">put js on this dom node</div>
-
-<!--pass some php variables into the object of the javascript-key "VendorAxel_ModuleJs/js/script-example3-requirejs"-->
+<!--the file that will be loaded is "VendorAxel_ModuleJs/js/script-example2" (note: omit the .js extension),
+ with no configuration (see empty {} after the filename)-->
+<!--the asterisk is instead of a selector, in this case the asterisk means "no selector"-->
