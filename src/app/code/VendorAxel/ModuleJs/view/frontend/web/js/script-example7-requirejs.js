@@ -1,4 +1,7 @@
-// https://www.mage2.tv/content/javascript/requirejs-fundamentals/using-requirejs-javascript-dependencies/
+// Video: https://www.mage2.tv/content/javascript/requirejs-fundamentals/using-requirejs-javascript-dependencies/
+// Video description:
+// Most modules do not work in isolation, but rather depend on other JavaScript modules.
+// RequireJS makes it simple to inject dependencies as needed.
 // ---
 // THIS FILE: Use dependency injection
 

@@ -1,4 +1,9 @@
-// https://www.mage2.tv/content/javascript/requirejs-fundamentals/defining-a-javascript-requirejs-amd-module/
+// Video: https://www.mage2.tv/content/javascript/requirejs-fundamentals/defining-a-javascript-requirejs-amd-module/
+// Video description:
+// All JavaScript in Magento 2 is loaded by RequireJS.
+// For this reason it important to know how to define a RequireJS module
+// (also called an AMD module, which stands for Asynchronous Module Definition).
+// This type of module definition is also used for JavaScript dependency injection.
 // ---
 // THIS FILE: "the use the AMD requireJs module definition"
 // the return function of this AMD module is the value of this module

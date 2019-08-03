@@ -19,7 +19,8 @@
             <!--<block name="script-example6-requirejs" template="VendorAxel_ModuleJs::script-example6-container.phtml"/>-->
             <!--<block name="script-example7-requirejs" template="VendorAxel_ModuleJs::script-example7-container.phtml"/>-->
             <!--<block name="script-example8" template="VendorAxel_ModuleJs::script-example8-container.phtml"/>-->
-            <!--example 9 is a mixin, defined in requirejs-config"-->
+            <!--example 9 is a mixin (see requirejs-config.js)-->
+            <!--example 10 is a js-module (see requirejs-config.js)-->
         </referenceContainer>
     </body>
 </page>

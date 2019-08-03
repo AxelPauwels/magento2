@@ -1,4 +1,9 @@
-// https://www.mage2.tv/content/javascript/requirejs-fundamentals/targeting-dom-nodes-in-simple-requirejs-modules/
+// Video: https://www.mage2.tv/content/javascript/requirejs-fundamentals/targeting-dom-nodes-in-simple-requirejs-modules/
+// Video description:
+// JavaScript that interacts with the HTML DOM needs to somehow address the elements it needs to work with.
+// Instead of strewing the code with selectors,
+// it is more elegant to pass the desired DOM nodes to the JavaScript during initialization,
+// similar to other dependency injection.
 // ---
 // THIS FILE: "select a specific dom node"
 
