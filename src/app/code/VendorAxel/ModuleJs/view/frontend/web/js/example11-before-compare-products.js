@@ -5,6 +5,7 @@
 // ---
 // Don't load our js module on every page, only when another module is loaded, and in this case, load it before that module
 // Actually it's not the "load order", but the "execution order" of the JS modules's callback functions
+// This can be done by using a shim dependency
 
 define(function () {
     'use strict';

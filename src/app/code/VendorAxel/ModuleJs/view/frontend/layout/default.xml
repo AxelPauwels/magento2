@@ -22,6 +22,7 @@
             <!--example 9 is a mixin (see requirejs-config.js)-->
             <!--example 10 is a js-module (see requirejs-config.js)-->
             <!--example 11 is a js-module (see requirejs-config.js)-->
+            <block name="example12" template="VendorAxel_ModuleJs::example12-container.phtml"/>
         </referenceContainer>
     </body>
 </page>
