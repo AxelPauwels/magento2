@@ -34,6 +34,17 @@
 // ----------
 // EXAMPLE 10
 // ----------
+// Note that "deps" is an array
+// var config = {
+//     deps: ['VendorAxel_ModuleJs/js/example10-log-when-loaded']
+// };
+
+// ----------
+// EXAMPLE 11
+// ----------
 var config = {
-    deps: ['VendorAxel_ModuleJs/js/example10-log-when-loaded']
+    shim: {'Magento_Catalog/js/view/compare-products':{
+        deps:['VendorAxel_ModuleJs/js/example11-before-compare-products']
+        }
+    }
 };
