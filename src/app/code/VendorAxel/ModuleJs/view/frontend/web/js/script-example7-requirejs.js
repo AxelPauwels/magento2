@@ -1,4 +1,4 @@
-//https://www.mage2.tv/content/javascript/requirejs-fundamentals/using-requirejs-javascript-dependencies/
+// https://www.mage2.tv/content/javascript/requirejs-fundamentals/using-requirejs-javascript-dependencies/
 // ---
 // THIS FILE: Use dependency injection
 
