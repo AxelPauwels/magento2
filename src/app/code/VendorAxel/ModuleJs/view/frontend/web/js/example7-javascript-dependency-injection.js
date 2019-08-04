@@ -9,9 +9,10 @@
 // define these AMD module dependencies in the array as first parameter from "define()"
 
 define(['jquery'], function ($) {
-    return function (config, element) {
-        console.log('script-example7, data-mage-init with dependency injection');
+    'use strict';
+    console.log('* example7 - javascript dependency injection *');
 
+    return function (config, element) {
         $.getJSON(config.base_url + 'rest/V1/directory/currency', function(result){
          element.innerText = JSON.stringify(result, null, 2);
         });

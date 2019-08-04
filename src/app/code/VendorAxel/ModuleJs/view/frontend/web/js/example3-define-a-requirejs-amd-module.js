@@ -10,10 +10,12 @@
 
 // 1 - requireJs loads this AMD module (this file) and calls this function to determine the AMD module's value:
 define(function () {
+    'use strict';
+    console.log('* example3 - define a RequireJs AMD module *');
 
     // 2 - Than Magento calls this funtion to initialize the module:
     return function () {
-        console.log('script-example3, I am a RequireJS AMD module function');
+        console.log('I am a RequireJS AMD module function');
     }
 });
 

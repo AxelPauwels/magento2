@@ -6,5 +6,7 @@
 
 define(function () {
     'use strict';
+    console.log('* example10, load js on every page by requirejs-config deps *');
+
     console.log('--- module loaded ---');
 });

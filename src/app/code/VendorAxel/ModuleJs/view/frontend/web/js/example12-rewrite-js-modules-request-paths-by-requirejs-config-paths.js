@@ -4,15 +4,11 @@
 // ---
 define(function () {
     'use strict';
-
-    console.log('--- example 12 ---');
+    console.log('* example12, rewrite js modules request paths by requirejs-config paths *');
 
     return function (config,element){
         element.innerText = 'This text is placed using requirejs-config paths';
     }
-
     // I've also edited the vendor file with a console.log to see the module in action at:
     // src/vendor/magento/module-catalog/view/frontend/web/js/view/compare-products.js:14
 });
-
-// We can add some

@@ -8,4 +8,4 @@
 // ---
 // THIS FILE: simply log a value
 
-console.log('script-example1');
+console.log('*** example1 - script in head ***');

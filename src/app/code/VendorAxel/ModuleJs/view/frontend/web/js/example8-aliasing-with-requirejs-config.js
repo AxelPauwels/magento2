@@ -6,9 +6,10 @@
 // THIS FILE: The same as example 7, but loaded by requirejs-config.js
 
 define(['jquery'], function ($) {
-    return function (config, element) {
-        console.log('script-example8, data-mag-init with dependency injection');
+    'use strict';
+    console.log('* example8, aliasing with requirejs-config *');
 
+    return function (config, element) {
         $.getJSON(config.base_url + 'rest/V1/directory/currency', function(result){
          element.innerText = JSON.stringify(result, null, 2);
         });

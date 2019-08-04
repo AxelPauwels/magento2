@@ -7,8 +7,11 @@
 // THIS FILE: "use the data-mage-init attribute, so we can omit the script tag" (only when the script tag has a selector)
 
 define(function () {
+    'use strict';
+    console.log('* example6 - targetting dom nodes with data-mage-init *');
+
     return function (config, element) {
-        console.log('script-example6, I am loaded through data-mag-init');
+        console.log('I am loaded through data-mage-init');
         console.log(config);
     }
 });

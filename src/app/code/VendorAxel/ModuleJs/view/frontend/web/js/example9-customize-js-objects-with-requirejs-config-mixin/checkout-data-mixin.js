@@ -1,4 +1,4 @@
-// Viedo: https://www.mage2.tv/content/javascript/requirejs-fundamentals/customizing-javascript-objects-with-requirejs-mixins/
+// Video: https://www.mage2.tv/content/javascript/requirejs-fundamentals/customizing-javascript-objects-with-requirejs-mixins/
 // Video description:
 // Often we need to tweak existing code, either to change it's behavior so it matches a given business requirement,
 // or - unfortunately - to fix a bug. Magento provides a plugin like mechanism called RequireJS mixins to accomplish that.
@@ -8,6 +8,7 @@
 
 define([],function () {
     'use strict';
+    console.log('* example9 - customize js objects with requirejs-config mixin *');
 
     // every mixin has to return a function
 

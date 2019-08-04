@@ -8,11 +8,13 @@
 // THIS FILE: "select a specific dom node"
 
 define(function () {
+    'use strict';
+    console.log('* example5 - targetting dom nodes *');
 
     // receive the element (that is selected by the selector in phtml)
     // if the selector is an asterisk, this function will be called once and element will be "false"
     return function (config, element) {
-        console.log('script-example5, I am targetting a specific dom node');
+        console.log('I am targetting a specific dom node');
         console.log(element);
     }
 });

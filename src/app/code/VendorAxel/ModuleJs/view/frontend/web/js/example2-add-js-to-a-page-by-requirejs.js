@@ -4,4 +4,6 @@
 // ---
 // THIS FILE: magento uses require js to load this file
 
-console.log('script-example2, I am loaded through magento by require-js');
+console.log('* example2 - add js to a page by requirejs *');
+
+console.log('I am loaded through magento by require-js');

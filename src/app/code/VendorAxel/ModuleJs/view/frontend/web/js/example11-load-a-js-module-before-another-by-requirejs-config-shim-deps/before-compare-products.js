@@ -9,9 +9,10 @@
 
 define(function () {
     'use strict';
+    console.log('* example11, load a js module before another by requirejs-config shim-deps *');
 
     console.log('--- module loaded before compare products ---');
 
-    // I've also edited the vendor file with a console.log to see the module in action at:
+    // I've also edited the vendor file with a console.log() to see the module in action at:
     // src/vendor/magento/module-catalog/view/frontend/web/js/view/compare-products.js:14
 });
