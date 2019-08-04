@@ -11,7 +11,7 @@
 
 define([], function () {
     'use strict';
-    console.log('* example 22 *');
+    console.log('* example 23 *');
 
     return function () {
         return {

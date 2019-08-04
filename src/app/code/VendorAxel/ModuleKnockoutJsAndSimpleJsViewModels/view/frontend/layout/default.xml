@@ -4,7 +4,8 @@
     <body>
         <referenceContainer name="content">
             <!--<block name="example22" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example22-container.phtml"/>-->
-            <block name="example23" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example23-container.phtml"/>
+            <!--<block name="example23" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example23-container.phtml"/>-->
+            <block name="example24" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example24-container.phtml"/>
         </referenceContainer>
     </body>
 </page>
