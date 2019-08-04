@@ -1,0 +1,19 @@
+<!--
+Video: https://www.mage2.tv/content/javascript/jquery-ui-widgets/persisting-the-state-of-a-collapsible-jquery-ui-widget/
+Video description:
+The state of a Magento collapsible can be persistet automatically in browser local storage.
+---
+give the container element a id (used for the localStorage-key)
+specify the safeState:true config option
+-->
+
+<div id="my-collapsible-container-id" data-mage-init='{"collapsible":{"saveState":true}}'>
+    <div data-role="title">
+        <h2>This is a collapsible widget</h2>
+        <button data-role="trigger">click</button>
+    </div>
+    <div data-role="content">
+        <p>This is my content</p>
+    </div>
+</div>
+<!--NOTE: Check the browser localStorage -->
