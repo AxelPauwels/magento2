@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!--EXAMPLE 1-->
+        <!--normally while the html is loading, the script will be executed and locks the html loading process,
+        the html will continue loading, after the script is executed.
+        By adding the defer="true" attribute, the script will be executed after the html is done loading,
+        so the user doesn't have to wait-->
+        <!--<script src="VendorAxel_ModuleRequireJsAndMagentoFundamentals::js/example1-script-in-head.js" defer="true"/>-->
+    </head>
+    <body>
+        <!--EXAMPLE 2-12-->
+        <referenceContainer name="content">
+            <!--<block name="example2" template="VendorAxel_ModuleRequireJsAndMagentoFundamentals::example2-container.phtml"/>-->
+            <!--<block name="example3" template="VendorAxel_ModuleRequireJsAndMagentoFundamentals::example3-container.phtml"/>-->
+            <!--<block name="example4" template="VendorAxel_ModuleRequireJsAndMagentoFundamentals::example4-container.phtml"/>-->
+            <!--<block name="example5" template="VendorAxel_ModuleRequireJsAndMagentoFundamentals::example5-container.phtml"/>-->
+            <!--<block name="example6" template="VendorAxel_ModuleRequireJsAndMagentoFundamentals::example6-container.phtml"/>-->
+            <!--<block name="example7" template="VendorAxel_ModuleRequireJsAndMagentoFundamentals::example7-container.phtml"/>-->
+            <!--<block name="example8" template="VendorAxel_ModuleRequireJsAndMagentoFundamentals::example8-container.phtml"/>-->
+            <!--example 9 is a requirejs-config mixin (see requirejs-config.js)-->
+            <!--example 10 is a requireJs AMD module (see requirejs-config.js)-->
+            <!--example 11 is a requireJs AMD module (see requirejs-config.js)-->
+            <!--<block name="example12" template="VendorAxel_ModuleRequireJsAndMagentoFundamentals::example12-container.phtml"/>-->
+        </referenceContainer>
+    </body>
+</page>

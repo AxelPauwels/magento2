@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <!--<block name="example13" template="VendorAxel_ModuleJqueryUiWidgets::example13-container.phtml"/>-->
+            <!--example 14 (see requirejs-config.js)-->
+            <!--<block name="example15" template="VendorAxel_ModuleJqueryUiWidgets::example15-container.phtml"/>-->
+            <!--<block name="example16" template="VendorAxel_ModuleJqueryUiWidgets::example16-container.phtml"/>-->
+            <!--<block name="example17" template="VendorAxel_ModuleJqueryUiWidgets::example17-container.phtml"/>-->
+            <!--<block name="example18" template="VendorAxel_ModuleJqueryUiWidgets::example18-container.phtml"/>-->
+            <!--<block name="example19" template="VendorAxel_ModuleJqueryUiWidgets::example19-container.phtml"/>-->
+            <!--<block name="example20" template="VendorAxel_ModuleJqueryUiWidgets::example20-container.phtml"/>-->
+
+            <!--see example 21 (INCLUDING DYNAMIC JAVASCRIPT IN THE CONTENT LOADED BY AJAX IN A JQUERY UI WIDGET):-->
+            <!--https://www.mage2.tv/content/javascript/jquery-ui-widgets/including-dynamic-javascript-in-the-content-loaded-by-ajax-in-a-jquery-ui-widget/-->
+        </referenceContainer>
+    </body>
+</page>
