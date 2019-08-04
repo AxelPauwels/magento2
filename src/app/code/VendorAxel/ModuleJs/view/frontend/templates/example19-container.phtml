@@ -1,0 +1,34 @@
+<!--
+Video: https://www.mage2.tv/content/javascript/jquery-ui-widgets/adding-animation-to-a-collapsible-jquery-ui-widget/
+Video description:
+When a collapsible widget transitions from closed to open or from open to closed state,
+jQuery.animate() can be used to make the transition look smooth.---
+-->
+
+<!--default 4oo ms-->
+<!--<div id="my-collapsible-container-id" data-mage-init='{"collapsible":{"animate":true}}'>-->
+
+<!--2oo ms-->
+<!--<div id="my-collapsible-container-id" data-mage-init='{"collapsible":{"animate":200}}'>-->
+
+<!--duration and easing-->
+<div id="my-collapsible-container-id" data-mage-init='{
+    "collapsible":{
+        "animate":{
+            "duration":600,
+            "easing":"linear"
+        }
+    }
+}'>
+    <div data-role="title">
+        <h2>This is a collapsible widget</h2>
+        <button data-role="trigger">click</button>
+    </div>
+    <div data-role="content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, fuga modi natus perferendis quaerat quibusdam voluptate! Aut consequatur corporis culpa doloremque eaque nihil nulla, porro praesentium quo, tempore vitae, voluptate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, fuga modi natus perferendis quaerat quibusdam voluptate! Aut consequatur corporis culpa doloremque eaque nihil nulla, porro praesentium quo, tempore vitae, voluptate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, fuga modi natus perferendis quaerat quibusdam voluptate! Aut consequatur corporis culpa doloremque eaque nihil nulla, porro praesentium quo, tempore vitae, voluptate.
+        </p>
+    </div>
+</div>

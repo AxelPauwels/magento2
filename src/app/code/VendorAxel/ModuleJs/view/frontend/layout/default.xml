@@ -28,7 +28,8 @@
             <!--<block name="example15" template="VendorAxel_ModuleJs::example15-container.phtml"/>-->
             <!--<block name="example16" template="VendorAxel_ModuleJs::example16-container.phtml"/>-->
             <!--<block name="example17" template="VendorAxel_ModuleJs::example17-container.phtml"/>-->
-            <block name="example18" template="VendorAxel_ModuleJs::example18-container.phtml"/>
+            <!--<block name="example18" template="VendorAxel_ModuleJs::example18-container.phtml"/>-->
+            <block name="example19" template="VendorAxel_ModuleJs::example19-container.phtml"/>
         </referenceContainer>
     </body>
 </page>
