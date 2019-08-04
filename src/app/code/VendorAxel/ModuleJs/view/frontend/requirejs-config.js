@@ -74,7 +74,7 @@
 // ----------
 // EXAMPLE 13
 // ----------
-// In this example we don't need this file. but sinds it's present, we need a empty config
+// In this example we don't need this file. but since it's present, we need a empty config
 // var config = {};
 
 // ----------
@@ -90,8 +90,8 @@
 //     }
 // };
 
-// ----------
-// EXAMPLE 15
-// ----------
-// In this example we don't need this file. but sinds it's present, we need a empty config
+// ---------------
+// EXAMPLE 15 - 16
+// ---------------
+// In this example we don't need this file. but since it's present, we need a empty config
 var config = {};
