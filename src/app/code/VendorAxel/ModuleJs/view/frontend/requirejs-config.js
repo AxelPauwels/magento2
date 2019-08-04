@@ -80,12 +80,18 @@
 // ----------
 // EXAMPLE 14
 // ----------
-var config = {
-    config:{
-        mixins: {
-            'Magento_Catalog/js/catalog-add-to-cart': {
-                'VendorAxel_ModuleJs/js/example14-customize-jquery-ui-widgets-with-requirejs-config-mixins/catalog-add-to-cart-mixin':true
-            }
-        }
-    }
-};
+// var config = {
+//     config:{
+//         mixins: {
+//             'Magento_Catalog/js/catalog-add-to-cart': {
+//                 'VendorAxel_ModuleJs/js/example14-customize-jquery-ui-widgets-with-requirejs-config-mixins/catalog-add-to-cart-mixin':true
+//             }
+//         }
+//     }
+// };
+
+// ----------
+// EXAMPLE 15
+// ----------
+// In this example we don't need this file. but sinds it's present, we need a empty config
+var config = {};
