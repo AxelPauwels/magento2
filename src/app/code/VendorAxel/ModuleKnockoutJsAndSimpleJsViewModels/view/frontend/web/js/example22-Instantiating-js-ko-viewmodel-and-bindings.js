@@ -2,7 +2,6 @@
 // Video description:
 // Magento integrates many view models on a page.
 // For this the core team introduced a special binding configuration syntax and UI registry.
-// ---
 
 define([], function () {
     'use strict';
@@ -10,7 +9,7 @@ define([], function () {
 
     return function () {
         return {
-            title: 'This is a title for a viewmodel'
+            title: 'This is a title for a view model'
         }
     }
 });

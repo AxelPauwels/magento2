@@ -2,7 +2,6 @@
 // Video description:
 // Passing values from PHP into view models is straight forward, but slightly different compared
 // to passing values into regular, non-view model, RequireJS modules.
-// ---
 
 define([], function () {
     'use strict';
@@ -12,7 +11,7 @@ define([], function () {
     // this configuration is passed to our module (this module) as parameter "config"
     return function (config) {
         return {
-            title: 'This is a title for a viewmodel',
+            title: 'This is a title for a view model',
             getTitle: function () {
                 return this.title
             },

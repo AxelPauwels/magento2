@@ -2,7 +2,6 @@
 // Video description:
 // The most powerful tool to debug JavaScript in Magento is familiarity with the UiRegistry AMD module and
 // the browser console. It stores an instance of every view model on a page and can be queried on a wide set of criteria.
-
 // ---
 // browser console command examples:
 // require('uiRegistry').get('viewModel')
@@ -15,7 +14,7 @@ define([], function () {
 
     return function () {
         return {
-            title: 'This is a title for a viewmodel',
+            title: 'This is a title for a view model',
             getTitle: function () {
                 return this.title
             }

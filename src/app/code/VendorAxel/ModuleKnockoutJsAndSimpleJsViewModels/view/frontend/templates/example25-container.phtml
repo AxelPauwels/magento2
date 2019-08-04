@@ -10,7 +10,7 @@
             "Magento_Ui/js/core/app": {
                 "components": {
                     "viewModel": {
-                        "component": "VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels/js/example24-passing-arguments-from-php-to-ko-viewmodels",
+                        "component": "VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels/js/example25-ko-observable",
                         "base_url": "<?= $block->escapeJs($block->getBaseUrl())?>"
                     }
                 }
@@ -20,5 +20,4 @@
 </script>
 <div data-bind="scope: 'viewModel'">
     <h2 data-bind="text: title"></h2>
-    <pre data-bind="text: JSON.stringify(config, null, 2)"></pre>
 </div>
