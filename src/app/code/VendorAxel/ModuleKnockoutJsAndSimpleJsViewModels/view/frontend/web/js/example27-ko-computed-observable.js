@@ -91,7 +91,3 @@ define(['ko', 'jquery'], function (ko, $) {
     }
 });
 // require('uiRegistry').get('viewModel').label('Test')
-
-
-
-

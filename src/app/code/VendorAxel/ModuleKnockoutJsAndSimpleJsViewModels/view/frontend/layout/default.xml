@@ -8,7 +8,8 @@
             <!--<block name="example24" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example24-container.phtml"/>-->
             <!--<block name="example25" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example25-container.phtml"/>-->
             <!--<block name="example26" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example26-container.phtml"/>-->
-            <block name="example27" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example27-container.phtml"/>
+            <!--<block name="example27" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example27-container.phtml"/>-->
+            <block name="example28" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example28-container.phtml"/>
         </referenceContainer>
     </body>
 </page>
