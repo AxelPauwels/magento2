@@ -23,7 +23,7 @@
             <!--example 10 is a requireJs AMD module (see requirejs-config.js)-->
             <!--example 11 is a requireJs AMD module (see requirejs-config.js)-->
             <!--<block name="example12" template="VendorAxel_ModuleJs::example12-container.phtml"/>-->
-            <block name="example13" template="VendorAxel_ModuleJs::example13-container.phtml"/>
+            <!--<block name="example13" template="VendorAxel_ModuleJs::example13-container.phtml"/>-->
         </referenceContainer>
     </body>
 </page>

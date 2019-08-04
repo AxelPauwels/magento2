@@ -19,13 +19,13 @@
 // ---------
 // the path is config/mixins
 // the target is Magento_Checkout/js/checkout-data
-// our mixin-module is VendorAxel_ModuleJs/js/checkout-data-mixin
+// our mixin-module is VendorAxel_ModuleJs/js/example9-customize-js-objects-with-requirejs-config-mixins/checkout-data-mixin
 // ---
 // var config = {
 //     config: {
 //         mixins: {
 //             'Magento_Checkout/js/checkout-data':{
-//                 'VendorAxel_ModuleJs/js/example9-customize-js-objects-with-requirejs-config-mixin/checkout-data-mixin':true
+//                 'VendorAxel_ModuleJs/js/example9-customize-js-objects-with-requirejs-config-mixins/checkout-data-mixin':true
 //             }
 //         }
 //     }
@@ -75,5 +75,17 @@
 // EXAMPLE 13
 // ----------
 // In this example we don't need this file. but sinds it's present, we need a empty config
-var config = {};
+// var config = {};
 
+// ----------
+// EXAMPLE 14
+// ----------
+var config = {
+    config:{
+        mixins: {
+            'Magento_Catalog/js/catalog-add-to-cart': {
+                'VendorAxel_ModuleJs/js/example14-customize-jquery-ui-widgets-with-requirejs-config-mixins/catalog-add-to-cart-mixin':true
+            }
+        }
+    }
+};

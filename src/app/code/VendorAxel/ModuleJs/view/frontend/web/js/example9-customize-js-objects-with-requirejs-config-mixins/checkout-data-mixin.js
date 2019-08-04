@@ -23,3 +23,5 @@ define([],function () {
         return checkoutData;
     }
 });
+
+// NOTE: go to the checkout page to test this
