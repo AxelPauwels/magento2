@@ -57,5 +57,3 @@ define(['ko'], function (ko) {
 // require('uiRegistry').get('viewModel').additional_charge(5)
 // use:
 // require('uiRegistry').get('viewModel').additional_charge = 5
-
-

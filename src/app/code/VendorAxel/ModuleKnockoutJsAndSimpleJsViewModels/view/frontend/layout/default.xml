@@ -11,7 +11,8 @@
             <!--<block name="example27" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example27-container.phtml"/>-->
             <!--<block name="example28" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example28-container.phtml"/>-->
             <!--<block name="example29" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example29-container.phtml"/>-->
-            <block name="example30" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example30-container.phtml"/>
+            <!--<block name="example30" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example30-container.phtml"/>-->
+            <block name="example31" template="VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels::example31-container.phtml"/>
         </referenceContainer>
     </body>
 </page>
