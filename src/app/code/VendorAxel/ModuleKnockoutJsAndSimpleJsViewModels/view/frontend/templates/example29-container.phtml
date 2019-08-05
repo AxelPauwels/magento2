@@ -1,0 +1,29 @@
+<?php declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */
+
+?>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "viewModel": {
+                        "component": "VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels/js/example28-ko-observable-arrays",
+                        "base_url": "<?= $block->escapeJs($block->getBaseUrl())?>"
+                    }
+                }
+            }
+        }
+    }
+</script>
+<!--inside the foreach, the context is changed. It's no longer the viewModel, but the exchange_rates object that's iterated over-->
+<div data-bind="scope: 'viewModel'">
+    <table data-bind="foreach: exchange_rates">
+        <tr>
+            <td data-bind="text: currency_to"></td>
+            <td data-bind="text: rate"></td>
+        </tr>
+    </table>
+</div>
