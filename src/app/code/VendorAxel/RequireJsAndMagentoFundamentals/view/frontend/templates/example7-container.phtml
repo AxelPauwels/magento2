@@ -1,0 +1,14 @@
+<?php declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */
+
+?>
+
+<pre id="target" data-mage-init='{
+        "VendorAxel_RequireJsAndMagentoFundamentals/js/example7-javascript-dependency-injection": {
+            "base_url": "<?= $block->escapeJs($block->getBaseUrl()) ?>"
+        }
+    }'
+>
+    put js on this dom node (please wait ...)
+</pre>

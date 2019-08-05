@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <!--<block name="example22" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example22-container.phtml"/>-->
+            <!--<block name="example23" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example23-container.phtml"/>-->
+            <!--<block name="example24" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example24-container.phtml"/>-->
+            <!--<block name="example25" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example25-container.phtml"/>-->
+            <!--<block name="example26" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example26-container.phtml"/>-->
+            <!--<block name="example27" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example27-container.phtml"/>-->
+            <!--<block name="example28" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example28-container.phtml"/>-->
+            <!--<block name="example29" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example29-container.phtml"/>-->
+            <!--<block name="example30" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example30-container.phtml"/>-->
+            <!--<block name="example31" template="VendorAxel_KnockoutJsAndSimpleJsViewModels::example31-container.phtml"/>-->
+        </referenceContainer>
+    </body>
+</page>

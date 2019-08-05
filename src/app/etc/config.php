@@ -232,9 +232,10 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Temando_Shipping' => 1,
-        'VendorAxel_ModuleJqueryUiWidgets' => 1,
-        'VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels' => 1,
-        'VendorAxel_ModuleRequireJsAndMagentoFundamentals' => 1,
+        'VendorAxel_JqueryUiWidgets' => 1,
+        'VendorAxel_KnockoutJsAndSimpleJsViewModels' => 1,
+        'VendorAxel_MagentoUiComponents' => 1,
+        'VendorAxel_RequireJsAndMagentoFundamentals' => 1,
         'Vertex_Tax' => 1
     ]
 ];

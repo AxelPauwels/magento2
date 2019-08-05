@@ -1,0 +1,16 @@
+<?php declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */
+
+?>
+<!--the content of "text/x-magento-init" is JSON-->
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "VendorAxel_RequireJsAndMagentoFundamentals/js/example2-add-js-to-a-page-by-requirejs": {}
+        }
+    }
+</script>
+<!--the file that will be loaded is "VendorAxel_RequireJsAndMagentoFundamentals/js/script-example2" (note: omit the .js extension),
+ with no configuration (see empty {} after the filename)-->
+<!--the asterisk is instead of a selector, in this case the asterisk means "no selector"-->
