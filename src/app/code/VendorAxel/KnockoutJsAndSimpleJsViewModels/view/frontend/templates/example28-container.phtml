@@ -18,7 +18,9 @@
         }
     }
 </script>
-<!--inside the foreach, the context is changed. It's no longer the viewModel, but the exchange_rates object that's iterated over-->
+<!--
+inside the foreach, the context is changed. It's no longer the viewModel, but the exchange_rates object that's iterated over
+-->
 <div data-bind="scope: 'viewModel'">
     <table data-bind="foreach: exchange_rates">
         <tr>

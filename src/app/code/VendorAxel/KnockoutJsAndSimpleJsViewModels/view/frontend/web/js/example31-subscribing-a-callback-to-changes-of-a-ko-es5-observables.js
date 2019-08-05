@@ -1,8 +1,11 @@
-// Video: https://www.mage2.tv/content/javascript/knockoutjs-and-simple-javascript-view-models/subscribing-a-callback-to-changes-of-a-ko-es5-observable/
-// Video description:
-// As nice as KO ES5 observables are, they do make interacting with the underlying KnockoutJS observable function harder
-// because it is hidden. This is usually only a problem when needing to subscribe a callback function to changes.
-// This video shows how to access the underlying observable so it is possible to subscribe to updates.
+/*
+Video:
+https://www.mage2.tv/content/javascript/knockoutjs-and-simple-javascript-view-models/subscribing-a-callback-to-changes-of-a-ko-es5-observable/
+Video description:
+As nice as KO ES5 observables are, they do make interacting with the underlying KnockoutJS observable function harder
+because it is hidden. This is usually only a problem when needing to subscribe a callback function to changes.
+This video shows how to access the underlying observable so it is possible to subscribe to updates.
+ */
 
 define(['ko'], function (ko) {
     'use strict';

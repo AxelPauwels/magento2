@@ -1,8 +1,11 @@
-// Video: https://www.mage2.tv/content/javascript/knockoutjs-and-simple-javascript-view-models/knockoutjs-es5-observables-with-ko.track/
-// Video description:
-// It can be cumbersome to remember that KnockoutJS observables always have to be dereferenced as a function.
-// It also is harder to read the code.
-// The KnockoutJS ES5 plugin solves this problem, and fortunately is included in Magento out of the box.
+/*
+Video:
+https://www.mage2.tv/content/javascript/knockoutjs-and-simple-javascript-view-models/knockoutjs-es5-observables-with-ko.track/
+Video description:
+It can be cumbersome to remember that KnockoutJS observables always have to be dereferenced as a function.
+It also is harder to read the code.
+The KnockoutJS ES5 plugin solves this problem, and fortunately is included in Magento out of the box.
+ */
 
 // normal EXAMPLE
 // --------------
@@ -53,7 +56,10 @@ define(['ko'], function (ko) {
         return viewModel;
     }
 });
-// instead of using it as function:
-// require('uiRegistry').get('viewModel').additional_charge(5)
-// use:
-// require('uiRegistry').get('viewModel').additional_charge = 5
+
+/*
+instead of using it as function:
+require('uiRegistry').get('viewModel').additional_charge(5)
+use:
+require('uiRegistry').get('viewModel').additional_charge = 5
+ */

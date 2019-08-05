@@ -1,16 +1,19 @@
-// Video: https://www.mage2.tv/content/javascript/jquery-ui-widgets/customizing-javascript-jquery-ui-widgets-with-requirejs-mixins/
-// Video description:
-// jQuery UI widget methods can be customized with RequireJS mixins,
-// but without knowing the proper extensibility syntax it is a tricky process.
-// This video shows how mixins can be used to plugin to jQuery widget methods.
-// ---
-// Previously (example 9) we used a JS mixin to modify functionality that returned a plain object
-// The jquery UI widget returns a constructor function, so we need to use the jquery UI widget extensibility system
+/*
+Video:
+https://www.mage2.tv/content/javascript/jquery-ui-widgets/customizing-javascript-jquery-ui-widgets-with-requirejs-mixins/
+Video description:
+jQuery UI widget methods can be customized with RequireJS mixins,
+but without knowing the proper extensibility syntax it is a tricky process.
+This video shows how mixins can be used to plugin to jQuery widget methods.
+---
+Previously (example 9) we used a JS mixin to modify functionality that returned a plain object
+The jquery UI widget returns a constructor function, so we need to use the jquery UI widget extensibility system
 
-// we want to override the method "submitForm" from:
-// src/vendor/magento/module-catalog/view/frontend/web/js/catalog-add-to-cart.js:15
-// here in "$.widget('mage.catalogAddToCart'", "mage" is the namespace and "catalogAddToCart" is the name
-// at the bottom you see that the constructor function is returned
+we want to override the method "submitForm" from:
+src/vendor/magento/module-catalog/view/frontend/web/js/catalog-add-to-cart.js:15
+here in "$.widget('mage.catalogAddToCart'", "mage" is the namespace and "catalogAddToCart" is the name
+at the bottom you see that the constructor function is returned
+ */
 
 // use the jquery dependency:
 define(['jquery'], function ($) {
@@ -34,6 +37,9 @@ define(['jquery'], function ($) {
         });
         return $.mage.catalogAddToCart;
     }
-    // I've also edited the vendor file with a console.log to see the module in action at:
-    // src/vendor/magento/module-catalog/view/frontend/web/js/view/compare-products.js:14
 });
+
+/*
+I've also edited the vendor file with a console.log to see the module in action at:
+src/vendor/magento/module-catalog/view/frontend/web/js/view/compare-products.js:14
+*/

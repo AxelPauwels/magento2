@@ -1,10 +1,13 @@
-// Video: https://www.mage2.tv/content/javascript/knockoutjs-and-simple-javascript-view-models/javascript-knockoutjs-computed-observable/
-// Video description:
-// Computed observables are the most useful feature of KnockoutJS, and they are used throughout the Magento frontend.
-// Understanding the concept is essential to being able to build frontend customizations effectively.
-// ---
-// when a view model function is called, and this function uses any other observables,
-// when one of these observables is updated, the function is called again and the view is updated
+/*
+Video:
+https://www.mage2.tv/content/javascript/knockoutjs-and-simple-javascript-view-models/javascript-knockoutjs-computed-observable/
+Video description:
+Computed observables are the most useful feature of KnockoutJS, and they are used throughout the Magento frontend.
+Understanding the concept is essential to being able to build frontend customizations effectively.
+---
+when a view model function is called, and this function uses any other observables,
+when one of these observables is updated, the function is called again and the view is updated
+ */
 
 // EXAMPLE 1
 // ---------
@@ -61,8 +64,10 @@
 //         return viewModel;
 //     }
 // });
-// NOTE: When updating the label, the ko.computed function is called again, and the label will be rerendered
-// require('uiRegistry').get('viewModel').label('Test')
+/*
+NOTE: When updating the label, the ko.computed function is called again, and the label will be rerendered
+require('uiRegistry').get('viewModel').label('Test')
+  */
 
 // EXAMPLE 4
 // ---------
@@ -90,4 +95,6 @@ define(['ko', 'jquery'], function (ko, $) {
         return viewModel;
     }
 });
-// require('uiRegistry').get('viewModel').label('Test')
+/*
+require('uiRegistry').get('viewModel').label('Test')
+ */

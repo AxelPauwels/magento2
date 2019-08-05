@@ -7,7 +7,8 @@
             <!--<block name="example33" template="VendorAxel_MagentoUiComponents::example33-container.phtml"/>-->
             <!--<block name="example34" template="VendorAxel_MagentoUiComponents::example34-container.phtml"/>-->
             <!--<block name="example35" template="VendorAxel_MagentoUiComponents::example35-container.phtml"/>-->
-            <block name="example36" template="VendorAxel_MagentoUiComponents::example36-container.phtml"/>
+            <!--<block name="example36" template="VendorAxel_MagentoUiComponents::example36-container.phtml"/>-->
+            <block name="example37" template="VendorAxel_MagentoUiComponents::example37-container.phtml"/>
         </referenceContainer>
     </body>
 </page>

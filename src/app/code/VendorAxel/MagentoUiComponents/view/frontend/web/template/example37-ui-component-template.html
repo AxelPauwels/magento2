@@ -1,0 +1,13 @@
+<p>Some stuff before the component</p>
+<!-- ko with: getChild('child1') -->
+<render />
+<!-- /ko -->
+<p>Some stuff after the component</p>
+
+<!--
+the 'with' binding switches the rendering context to the specified value
+in this case getChild() will return the child element with the given index 'child1'
+
+the 'ko template: getTemplate()' can also be abbreviated by '<render/>'
+-->
+

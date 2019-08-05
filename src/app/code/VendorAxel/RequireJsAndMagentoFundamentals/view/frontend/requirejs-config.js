@@ -1,8 +1,8 @@
-// Note: that this file is not in the "web" directory, but in the "frontend" directory
-// When this file is not used, but is just present for other examples, it should contain empty config:
+/*
+Note: that this file is not in the "web" directory, but in the "frontend" directory
+When this file is not used, but is just present for other examples, it should contain empty config:
+ */
 var config = {};
-
-
 
 // ---------
 // EXAMPLE 8
@@ -63,14 +63,16 @@ var config = {};
 //         'myalias': 'VendorAxel_RequireJsAndMagentoFundamentals/js'
 //     }
 // };
-// We can add more paths like :
-//     'myalias1': 'VendorAxel_RequireJsAndMagentoFundamentals/js/v1',
-//     'myalias2': 'VendorAxel_RequireJsAndMagentoFundamentals/js/v2'
-// when this file/filestructure would changed, we just can adjust this config-paths and don't need to adjust the phtml
+/*
+We can add more paths like :
+    'myalias1': 'VendorAxel_RequireJsAndMagentoFundamentals/js/v1',
+    'myalias2': 'VendorAxel_RequireJsAndMagentoFundamentals/js/v2'
+when this file/filestructure would changed, we just can adjust this config-paths and don't need to adjust the phtml
 
-// map VS paths
-// ++++++++++++
-// map is used to rename full JS modules
-// paths can work on path segments too
-// map can be declared to be valid only in a specific JS module
-// paths configurations are always applied globally
+map VS paths
+------------
+map is used to rename full JS modules
+paths can work on path segments too
+map can be declared to be valid only in a specific JS module
+paths configurations are always applied globally
+ */
