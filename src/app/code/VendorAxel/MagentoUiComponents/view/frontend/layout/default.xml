@@ -5,7 +5,8 @@
         <referenceContainer name="content">
             <!--<block name="example32" template="VendorAxel_MagentoUiComponents::example32-container.phtml"/>-->
             <!--<block name="example33" template="VendorAxel_MagentoUiComponents::example33-container.phtml"/>-->
-            <block name="example34" template="VendorAxel_MagentoUiComponents::example34-container.phtml"/>
+            <!--<block name="example34" template="VendorAxel_MagentoUiComponents::example34-container.phtml"/>-->
+            <block name="example35" template="VendorAxel_MagentoUiComponents::example35-container.phtml"/>
         </referenceContainer>
     </body>
 </page>
