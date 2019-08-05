@@ -9,11 +9,14 @@
         "*": {
             "Magento_Ui/js/core/app": {
                 "components": {
-                    "viewModel": {
-                        "component": "VendorAxel_MagentoUiComponents/js/example32-Js-uicomponent-class-hierarchy"
+                    "myUiComponent": {
+                        "component": "VendorAxel_MagentoUiComponents/js/example32-js-uicomponent-class-hierarchy"
                     }
                 }
             }
         }
     }
 </script>
+<div data-bind="scope: 'myUiComponent'">
+    <div data-bind="text: label"></div>
+</div>
