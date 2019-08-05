@@ -10,7 +10,7 @@
             "Magento_Ui/js/core/app": {
                 "components": {
                     "viewModel": {
-                        "component": "VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels/js/example28-ko-observable-arrays",
+                        "component": "VendorAxel_ModuleKnockoutJsAndSimpleJsViewModels/js/example29-ko-virtual-elements",
                         "base_url": "<?= $block->escapeJs($block->getBaseUrl())?>"
                     }
                 }
@@ -18,12 +18,17 @@
         }
     }
 </script>
-<!--inside the foreach, the context is changed. It's no longer the viewModel, but the exchange_rates object that's iterated over-->
 <div data-bind="scope: 'viewModel'">
-    <table data-bind="foreach: exchange_rates">
+    <table>
+        <tr>
+            <th data-bind="i18n: 'Currency to'"></th>
+            <th data-bind="i18n: 'Rate'"></th>
+        </tr>
+        <!-- ko foreach: exchange_rates -->
         <tr>
             <td data-bind="text: currency_to"></td>
             <td data-bind="text: rate"></td>
         </tr>
+        <!-- /ko -->
     </table>
 </div>
