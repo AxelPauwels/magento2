@@ -1,0 +1,36 @@
+<?php declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */
+
+?>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "myUiComponent": {
+                        "component": "uiComponent",
+                        "template": "VendorAxel_MagentoUiComponents/example36-ui-component-template",
+                        "children": {
+                            "child1": {
+                                "component": "uiComponent",
+                                "template": "VendorAxel_MagentoUiComponents/example36-ui-component-template",
+                                "children": {
+                                    "child2": {
+                                        "component": "uiComponent",
+                                        "template": "VendorAxel_MagentoUiComponents/example36-ui-component-template"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+<div data-bind="scope: 'myUiComponent'">
+    TEST
+    <div data-bind="template: getTemplate()"></div>
+</div>
